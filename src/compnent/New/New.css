@@ -1,0 +1,129 @@
+.new{
+    width: 100%;
+    display: flex;
+    text-transform: capitalize;
+}
+.new .site{
+    flex:1 ;
+}
+.new .contener{
+    flex: 5;
+    
+
+}
+.new .top, .bottom{
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+}
+.new .top h1{
+    color: #ccc;
+    font-weight: 400;
+}
+.new .bottom {
+    display: flex;
+    align-items: center;
+    padding-bottom: 2rem;
+    margin-top: -1.2rem;
+
+}
+/* ///////////////////////////////////////// */
+@media (max-width:880px) {
+    .new .bottom{
+        flex-direction: column;
+    }
+    .new .left img{
+        margin-bottom: 2rem;
+        width: 100px !important; 
+        height: 100px !important;
+    }
+}
+
+/* ///////////////////////////////////////// */
+
+.new .bottom .left{
+    flex: 1;
+    text-align: center;
+}
+.new .bottom .right{
+    flex: 2;
+}
+
+.new .bottom .left img{
+    width: 150px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+}
+.new .form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+}
+.new .form .input_form{
+    width: 40%;
+}
+.new .form .input_form input{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-bottom: solid 1px #ccc;
+    outline: none;
+}
+.new .label_file{
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+}
+.new .form .input_form .upload{
+    position: absolute;
+    top: 20%;
+    right: -2rem;
+    font-size: 20px;
+    
+}
+.new .form button{
+    width: 150px;
+    padding: 7px;
+    background-color: teal;
+    color: white;
+    border: none;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.password{
+    position: relative;
+}
+.password .eye_password{
+    font-size: 20px;
+    position: absolute;
+    top: 1.5rem;
+    right: 5px;
+}
+.new .left img{
+    max-width: 200px !important;
+    max-height: 200px !important;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/* /////////////////////////////////////////////// */
+    @media (max-width:560px) {
+        .new .form{
+            flex-direction: column;
+            align-items: center;
+        }
+        .new .form .input_form{
+            max-width: 250px;
+            width: 100%;
+        }
+
+    }
+/* /////////////////////////////////////////////// */

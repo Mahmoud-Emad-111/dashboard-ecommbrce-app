@@ -1,0 +1,143 @@
+*{
+    text-transform: capitalize;
+}
+:root{
+    --main_color:#6439ff;
+}
+.side_bar{
+    
+    border: 1px solid rgb(229, 229, 229);
+    flex: 1;
+    min-height: 100vh;
+    background-color: white;
+}
+.side_bar div:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: var(--main_color);
+    font-weight: 600;
+}
+
+.side_bar .main {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    justify-content: space-between;
+    
+}
+.side_bar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.side_bar ul p{
+    color: rgb(127, 127, 127);
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.side_bar li{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+    
+}
+.side_bar li:hover{
+    background-color: #ece8ff;
+}
+.side_bar ul svg{
+    color: var(--main_color);
+    width: 20px;
+}
+
+.side_bar ul li span{
+    font-size: 13;
+    margin-left: 10px;
+    
+    font-weight: 600;
+}
+.moods_color{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.moods_color .mood:nth-child(1){
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    margin: 5;
+    cursor: pointer;
+    border: 1px solid var(--main_color);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.moods_color .mood:nth-child(2){
+    width: 20px;
+    height: 20px;
+    background-color: rgb(0, 0, 0);
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid var(--main_color);
+    border-radius: 5px;
+
+}   
+.side_bar .hedaer a{
+    color: var(--main_color);
+    
+
+}
+.side_bar .hedaer{
+    position: relative;
+}
+.side_bar .hedaer .close{
+    position: absolute;
+    right: -50px;
+    top: 29px;
+    font-size: 35px;
+    cursor: pointer;
+    display: none;
+}
+a{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+.active_side{
+    display: block;
+    width:250px;
+    position: fixed
+}
+
+/* ////////////////////////////////////////// */
+                /* DARKMOOD */
+/* /////////////////////////////////////////// */
+.dark {
+    border-color: rgb(72, 72, 72) !important;
+    
+}
+.dark .hedaer a{
+    color: rgb(127, 127, 127);
+}
+.dark a, .dark li{
+    color: rgb(127, 127, 127);
+}
+.dark li i{
+    color:rgb(127, 127, 127);
+}
+
+@media (max-width:1200px) {
+    .side_bar{
+        display: none;
+        position: relative;
+        width: 250px;
+        z-index: 66666;
+    }
+}

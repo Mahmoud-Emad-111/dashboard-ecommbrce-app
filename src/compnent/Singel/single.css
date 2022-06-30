@@ -1,0 +1,82 @@
+
+
+.main_single{
+    display: flex;
+    text-transform: capitalize;
+    width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+
+}
+.mb-4{
+    margin-bottom: 0 !important;
+
+}
+.main_single .side{
+    flex: 1;
+}
+.main_single .contener{
+    flex: 5;
+}
+.top{
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+.main_single .top .profile{
+    flex:4;
+    box-shadow: 2px 4px 3px 1px rgb(201 201 201 / 47%);
+}
+.main_single .top .chart{
+    flex: 6;
+    box-shadow: 2px 4px 3px 1px rgb(201 201 201 / 47%);
+
+}
+.main_single .profile, .chart{
+    padding: 20px;
+}
+.main_single .profile .main{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    gap: 30px;
+}
+.main_single h3{
+    color: #ccc;
+    font-size: 20px;
+    
+}
+.main_single .profile img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.data p span{
+    color: gray;
+    font-weight: bold;
+}
+.main_single .chart h2{
+    color:#ccc;
+    font-weight: 400;
+}
+.main_single .bottom{
+    padding: 20px;
+}
+.dark{
+    background-color: #111;
+}
+/* //////////////////////////////////////// */
+@media (max-width:376px) {
+    .main_single .my_gmail{
+        font-weight: normal;
+        font-size: 15px;
+        color: #000;
+    }
+
+}
+/* //////////////////////////////////////// */

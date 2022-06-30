@@ -1,0 +1,40 @@
+.list_main{
+    box-shadow: 2px 4px 10px 1px rgb(201 201 201 / 47%);
+    padding: 20px;
+    
+}
+.list_main{
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(167, 166, 166);
+    display: block;
+    padding: 20px;
+
+}
+.list_main img{
+    width: 50px;
+}
+.list_main .status{
+    padding: 6px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.list_main .Approved{
+        color: rgb(12, 132, 12);
+        background-color: rgba(0, 128, 0, 0.151);
+}
+.list_main .Pending
+{
+    color: goldenrod;
+    background-color:rgba(189, 189, 3, 0.103);
+}
+/* //////////////////////////////////////// */
+                /* DARK_MOOD */
+/* ///////////////////////////////////////// */
+.dark td, .dark th{
+    background-color: #111;
+    color: #7f7f7f;
+}

@@ -1,0 +1,68 @@
+.feature{
+    flex: 2;
+    padding: 10px;
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    text-transform: capitalize;
+}
+.feature .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feature .bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.feature .top h3{
+    color: gray;
+    font-weight: 400;
+    font-size: 20px;
+}
+.feature .feature-ch{
+    width: 100px;
+    height: 100px;
+}
+.feature .captch{
+    display:  flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+
+}
+.feature .captch span:nth-child(1){
+    color: gray;
+    font-size: 20px;
+}
+.feature .captch span:nth-child(2){
+    font-size: 50px;
+}
+.feature .captch span:nth-child(3){
+    text-align: center;
+    color: gray;
+}
+.feature .Planning{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+.feature .Planning div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.feature .Planning span:nth-child(1){
+    color: gray;
+    font-size: 17px;
+}
+.feature .Planning .postive{
+    color: red;
+}
+
+.feature .Planning .negtive{
+    color: green;
+}

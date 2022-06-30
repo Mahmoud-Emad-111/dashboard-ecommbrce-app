@@ -1,0 +1,18 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+body {
+  margin:0;
+  padding:0;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  font-family:Cairo, sans-serif;
+}
+a{
+  text-decoration: none;
+  color:#000;
+}
+svg{
+  cursor: pointer;
+}
+.dark{
+  background-color: #111 !important;
+}

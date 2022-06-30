@@ -1,0 +1,133 @@
+.product{
+    width: 100%;
+    display: flex;
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.product .site{
+    flex:1 ;
+}
+.product .contener{
+    flex: 5;
+}
+.product .top, .bottom{
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+}
+.product .top h1{
+    color: #ccc;
+    font-weight: 400;
+}
+.product .bottom {
+    display: flex;
+    align-items: center;
+
+}
+.product .bottom .left{
+    flex: 1;
+    text-align: center;
+}
+.product .bottom .right{
+    flex: 2;
+}
+
+.product .bottom .left img{
+    width: 150px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+}
+.product .form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+}
+.product .form .input_form{
+    width: 40%;
+}
+.product .form .input_form input{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-bottom: solid 1px #ccc;
+    outline: none;
+}
+.product .form .input_form i{
+    font-size: 25px;
+    margin-top: 20px;
+}
+.product .form button{
+    width: 150px;
+    padding: 7px;
+    background-color: teal;
+    color: white;
+    border: none;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.product .left img{
+    width: 200px !important;
+    height: 200px !important;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.password{
+    position: relative;
+}
+.password i{
+        
+    position: absolute;
+    top: 15px;
+    right: 5px;
+}
+/* /////////////////////////////////////////// */
+                /* DARK_MOOD */
+/* /////////////////////////////////////////// */
+.dark, .dark input{
+    background-color: #111;
+    color:white;
+}
+
+.dark label{
+    color: #ccc;
+}
+
+/* ///////////////////////////////////////// */
+@media (max-width:880px) {
+    .product .bottom{
+        flex-direction: column;
+    }
+    .product .left img{
+        margin-bottom: 2rem;
+        width: 100px !important; 
+        height: 100px !important;
+    }
+    
+}
+@media (max-width:560px) {
+    .product .form{
+        flex-direction: column;
+        align-items: center;
+    }
+    .product .form .input_form{
+        max-width: 250px;
+        width: 100%;
+    }
+
+}
+
+/* ///////////////////////////////////////// */

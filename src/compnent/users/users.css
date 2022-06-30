@@ -1,0 +1,156 @@
+.main_users{
+    display: flex;
+    
+}
+
+.main_users .contener{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 8rem;
+    overflow: hidden;
+}
+.user_list_{
+    height: 100%;
+    padding-bottom: 8rem;
+    overflow: hidden;
+}
+.main_users .nav{
+    flex: 5;
+}
+.main_users .site{
+    flex: 1;
+}
+.main_users .contener .table {
+    padding: 20px;
+    width: 100%;
+}
+
+.main_users .table .img_name img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+    margin-right: 20px;
+}
+.main_users .table .status{
+    padding: 6px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.main_users  .pending{
+    color: goldenrod;
+    background-color:rgba(189, 189, 3, 0.103);
+}
+.main_users  .active{    
+    color: rgb(12, 132, 12);
+    background-color: rgba(0, 128, 0, 0.151);
+
+}
+.main_users  .passive{
+    background-color: rgba(255, 0, 0, 0.05);
+    color: crimson;
+}
+.main_users .action button{
+    border: none;
+    width: fit-content;
+    padding: 2px 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.main_users .action button:first-child{
+    background-color:rgba(0, 0, 139, 0.061);
+    border: 1px dotted darkblue;
+    color: darkblue;
+    margin-right: 20px;
+}
+
+.main_users .action button:last-child{
+    background-color:rgba(220, 20, 60, 0.06);
+    border: 1px dotted darkblue;
+    color: crimson;
+    margin-right: 20px;
+}
+.action a{
+    color: darkblue;
+}
+.add_new_user{
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.add_new_user .title{
+    font-size: 30px;
+    color: gray;
+}
+.table  .add_new_user a{
+    border-radius: 5px;
+    text-decoration: none;
+    color: green;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid green;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.table  .add_new_user a:hover{
+    background-color: green;
+    color: white;
+}
+.table{
+    margin: 0;
+    padding: 0;
+    height: 544px;
+}
+
+.nav .body_active{
+    position: relative;
+
+}
+ .body_active::after{
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.197);
+}
+
+/* ///////////////////////////////////// */
+            /* DARK_MOOD */
+/* ///////////////////////////////////// */
+
+.dark{
+    background-color: #111;
+}
+.dark .table .MuiDataGrid-root{
+    color: #7f7f7f;
+}
+.dark .MuiToolbar-root{
+    background-color: #111;
+
+    color: #7f7f7f;
+}
+@media (max-width:1200px) {
+    .site{
+        display: none;
+    }
+}
