@@ -1,3 +1,16 @@
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    font-size: 18px;
+    color: #666;
+}
+
+.dark .loading {
+    color: #bbb;
+}
+
 .main_users{
     display: flex;
     
@@ -25,14 +38,16 @@
     width: 100%;
 }
 
-.main_users .table .img_name img{
+.main_users .table .img_name {
+    display: flex;
+    align-items: center;
+}
+
+.main_users .table .img_name img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+    object-fit: cover;
     margin-right: 20px;
 }
 .main_users .table .status{
@@ -92,6 +107,7 @@
 .add_new_user .title{
     font-size: 30px;
     color: gray;
+    text-transform: capitalize;
 }
 .table  .add_new_user a{
     border-radius: 5px;

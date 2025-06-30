@@ -80,3 +80,532 @@
 
 }
 /* //////////////////////////////////////// */
+.loading, .error-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    font-size: 18px;
+    color: #666;
+}
+
+.dark .loading, .dark .error-message {
+    color: #bbb;
+}
+
+.error-message {
+    color: #f44336;
+}
+
+.main_single .profile .img {
+    position: relative;
+}
+
+.main_single .profile .img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* تنسيقات حالات الـ status */
+.status {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.status.pending {
+    background-color: rgba(255, 193, 7, 0.2);
+    color: #ff9800;
+}
+
+.status.approved {
+    background-color: rgba(76, 175, 80, 0.2);
+    color: #4caf50;
+}
+
+.status.completed {
+    background-color: rgba(76, 175, 80, 0.2);
+    color: #4caf50;
+}
+
+.status.processing {
+    background-color: rgba(33, 150, 243, 0.2);
+    color: #2196f3;
+}
+
+.status.rejected {
+    background-color: rgba(244, 67, 54, 0.2);
+    color: #f44336;
+}
+
+/* تنسيقات شارات الحالة */
+.status-badge {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.status-badge.pending {
+    background-color: rgba(255, 193, 7, 0.2);
+    color: #ff9800;
+}
+
+.status-badge.approved {
+    background-color: rgba(76, 175, 80, 0.2);
+    color: #4caf50;
+}
+
+.status-badge.completed {
+    background-color: rgba(76, 175, 80, 0.2);
+    color: #4caf50;
+}
+
+.status-badge.processing {
+    background-color: rgba(33, 150, 243, 0.2);
+    color: #2196f3;
+}
+
+.status-badge.rejected {
+    background-color: rgba(244, 67, 54, 0.2);
+    color: #f44336;
+}
+
+/* تنسيقات أزرار الحالة */
+.status-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.status-btn.approved, .status-btn.completed {
+    background-color: rgba(76, 175, 80, 0.2);
+    color: #4caf50;
+    border: 1px solid rgba(76, 175, 80, 0.5);
+}
+
+.status-btn.approved:hover, .status-btn.completed:hover {
+    background-color: rgba(76, 175, 80, 0.3);
+}
+
+.status-btn.processing {
+    background-color: rgba(33, 150, 243, 0.2);
+    color: #2196f3;
+    border: 1px solid rgba(33, 150, 243, 0.5);
+}
+
+.status-btn.processing:hover {
+    background-color: rgba(33, 150, 243, 0.3);
+}
+
+.status-btn.rejected {
+    background-color: rgba(244, 67, 54, 0.2);
+    color: #f44336;
+    border: 1px solid rgba(244, 67, 54, 0.5);
+}
+
+.status-btn.rejected:hover {
+    background-color: rgba(244, 67, 54, 0.3);
+}
+
+/* تنسيقات الوضع الداكن */
+.dark .status.pending {
+    background-color: rgba(255, 193, 7, 0.1);
+    color: #ffb74d;
+}
+
+.dark .status.approved, .dark .status.completed {
+    background-color: rgba(76, 175, 80, 0.1);
+    color: #81c784;
+}
+
+.dark .status.processing {
+    background-color: rgba(33, 150, 243, 0.1);
+    color: #64b5f6;
+}
+
+.dark .status.rejected {
+    background-color: rgba(244, 67, 54, 0.1);
+    color: #e57373;
+}
+
+.transactions-section, .cashouts-section {
+    margin-bottom: 30px;
+}
+
+.transactions-section h3, .cashouts-section h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.MuiTableCell-root {
+    text-align: left !important;
+}
+
+.MuiTableCell-head {
+    font-weight: 600 !important;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.status.active {
+    background-color: rgba(0, 128, 0, 0.2);
+    color: green;
+}
+
+.status.pending {
+    background-color: rgba(255, 193, 7, 0.2);
+    color: #ff9800;
+}
+
+.status.completed {
+    background-color: rgba(0, 128, 0, 0.2);
+    color: green;
+}
+
+.status.rejected {
+    background-color: rgba(244, 67, 54, 0.2);
+    color: #f44336;
+}
+
+/* Dark mode styles */
+.dark .MuiPaper-root {
+    background-color: #333;
+    color: #ddd;
+}
+
+.dark .MuiTableCell-root {
+    color: #ddd;
+    border-bottom: 1px solid #444;
+}
+
+.dark .MuiTableCell-head {
+    background-color: #222;
+}
+
+.cashout-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.status-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.status-btn.completed {
+    background-color: rgba(76, 175, 80, 0.2);
+    color: #4caf50;
+    border: 1px solid rgba(76, 175, 80, 0.5);
+}
+
+.status-btn.completed:hover {
+    background-color: rgba(76, 175, 80, 0.3);
+}
+
+.status-btn.rejected {
+    background-color: rgba(244, 67, 54, 0.2);
+    color: #f44336;
+    border: 1px solid rgba(244, 67, 54, 0.5);
+}
+
+.status-btn.rejected:hover {
+    background-color: rgba(244, 67, 54, 0.3);
+}
+
+/* Dark mode styles for buttons */
+.dark .status-btn.completed {
+    background-color: rgba(76, 175, 80, 0.1);
+    color: #81c784;
+    border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.dark .status-btn.rejected {
+    background-color: rgba(244, 67, 54, 0.1);
+    color: #e57373;
+    border: 1px solid rgba(244, 67, 54, 0.3);
+}
+
+.status-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Toast notification custom styles */
+.Toastify__toast {
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+.Toastify__toast-body {
+    font-size: 14px;
+}
+
+.Toastify__progress-bar {
+    height: 3px;
+}
+
+/* Dark mode toast styles */
+.dark .Toastify__toast {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark .Toastify__close-button {
+    color: #fff;
+}
+
+.dark .Toastify__progress-bar {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* إعادة تصميم الإشعارات لتكون في أسفل اليمين وبحجم صغير */
+.custom-notification {
+    position: fixed;
+    bottom: 20px; /* تغيير من top إلى bottom */
+    right: 20px;
+    padding: 8px 12px; /* تقليل الحشو */
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto !important;
+    min-width: 250px; /* تقليل العرض الأقصى */
+    animation: slideUpAndFade 0.4s ease-out forwards; /* تغيير الرسوم المتحركة */
+    font-weight: 500;
+    font-size: 13px; /* تقليل حجم الخط */
+}
+
+@keyframes slideUpAndFade {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.custom-notification::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.custom-notification.success {
+    background-color: #f0f9f0;
+    color: #1b5e20;
+    border: 1px solid rgba(46, 125, 50, 0.2);
+}
+
+.custom-notification.success::before {
+    background-color: #4caf50;
+}
+
+.custom-notification.error {
+    background-color: #fef5f5;
+    color: #b71c1c;
+    border: 1px solid rgba(198, 40, 40, 0.2);
+}
+
+.custom-notification.error::before {
+    background-color: #f44336;
+}
+
+.custom-notification .notification-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.custom-notification .notification-icon {
+    font-size: 16px; /* تقليل حجم الأيقونة */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-notification .notification-message {
+    font-size: 13px; /* تقليل حجم النص */
+}
+
+.custom-notification button {
+    background: none;
+    border: none;
+    font-size: 16px; /* تقليل حجم زر الإغلاق */
+    cursor: pointer;
+    color: inherit;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-left: 8px;
+}
+
+.custom-notification button:hover {
+    opacity: 1;
+}
+
+.dark .custom-notification.success {
+    background-color: rgba(27, 94, 32, 0.15);
+    color: #81c784;
+    border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.dark .custom-notification.error {
+    background-color: rgba(183, 28, 28, 0.15);
+    color: #e57373;
+    border: 1px solid rgba(244, 67, 54, 0.3);
+}
+
+/* Media queries for responsive notifications */
+@media (max-width: 768px) {
+    .custom-notification {
+        right: 10px;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-notification {
+        right: 5px;
+        max-width: 220px;
+    }
+}
+
+/* تأكد من أن الإشعار يظل داخل حدود الشاشة */
+.contener {
+    position: relative;
+    overflow: hidden;
+}
+
+/* تنسيقات القائمة المنسدلة للحالات */
+.status-select-container {
+    min-width: 120px;
+}
+
+.status-select {
+    font-size: 14px !important;
+    border-radius: 4px !important;
+}
+
+.status-select.pending {
+    background-color: rgba(255, 193, 7, 0.1);
+    color: #ff9800;
+    border: 1px solid rgba(255, 193, 7, 0.3);
+}
+
+.status-select.approved {
+    background-color: rgba(76, 175, 80, 0.1);
+    color: #4caf50;
+    border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.status-select.completed {
+    background-color: rgba(76, 175, 80, 0.1);
+    color: #4caf50;
+    border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.status-select.processing {
+    background-color: rgba(33, 150, 243, 0.1);
+    color: #2196f3;
+    border: 1px solid rgba(33, 150, 243, 0.3);
+}
+
+.status-select.rejected {
+    background-color: rgba(244, 67, 54, 0.1);
+    color: #f44336;
+    border: 1px solid rgba(244, 67, 54, 0.3);
+}
+
+/* تنسيقات خيارات القائمة المنسدلة */
+.status-option {
+    font-size: 14px !important;
+    padding: 8px 16px !important;
+}
+
+.status-option.pending {
+    color: #ff9800 !important;
+}
+
+.status-option.approved {
+    color: #4caf50 !important;
+}
+
+.status-option.completed {
+    color: #4caf50 !important;
+}
+
+.status-option.processing {
+    color: #2196f3 !important;
+}
+
+.status-option.rejected {
+    color: #f44336 !important;
+}
+
+/* تنسيقات الوضع الداكن للقائمة المنسدلة */
+.dark .status-select {
+    background-color: #333;
+}
+
+.dark .status-select.pending {
+    background-color: rgba(255, 193, 7, 0.05);
+    color: #ffb74d;
+    border: 1px solid rgba(255, 193, 7, 0.2);
+}
+
+.dark .status-select.approved, .dark .status-select.completed {
+    background-color: rgba(76, 175, 80, 0.05);
+    color: #81c784;
+    border: 1px solid rgba(76, 175, 80, 0.2);
+}
+
+.dark .status-select.processing {
+    background-color: rgba(33, 150, 243, 0.05);
+    color: #64b5f6;
+    border: 1px solid rgba(33, 150, 243, 0.2);
+}
+
+.dark .status-select.rejected {
+    background-color: rgba(244, 67, 54, 0.05);
+    color: #e57373;
+    border: 1px solid rgba(244, 67, 54, 0.2);
+}
+
+/* تنسيقات القائمة المنسدلة عند التحميل */
+.status-select-loading {
+    opacity: 0.7;
+    pointer-events: none;
+}

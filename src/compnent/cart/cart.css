@@ -40,6 +40,9 @@
 .widget .up{
     color: green;
 }
+.widget .down{
+    color: red;
+}
 .widget .icone{
     width: 32px;
     height: 34px;

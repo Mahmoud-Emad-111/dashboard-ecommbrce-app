@@ -1,0 +1,343 @@
+/* تنسيقات أساسية */
+.cashouts-title {  margin: 20px 0;
+  color: #333;  font-size: 24px;
+  font-weight: 500;  padding: 0 20px;
+}
+.dark .cashouts-title {  color: #ddd;
+}
+/* تنسيقات خلية المستخدم */.user-cell {
+  display: flex;  align-items: center;
+  gap: 10px;}
+.user-avatar {
+  width: 40px !important;  height: 40px !important;
+}
+.user-info {  display: flex;
+  flex-direction: column;}
+.user-name {
+  font-weight: 500;  font-size: 14px;
+}
+.user-email {  font-size: 12px;
+  color: #666;}
+/* تنسيقات المبلغ */
+.amount {  font-weight: 600;
+  font-size: 14px;}
+/* تنسيقات المحفظة */
+.wallet-info {  display: flex;
+  align-items: center;  gap: 8px;
+}
+.wallet-icon {  font-size: 16px;
+}
+.wallet-icon.paypal {  color: #0070ba;
+}
+.wallet-icon.visa {  color: #1a1f71;
+}
+.wallet-type {  text-transform: capitalize;
+  font-weight: 500;}
+.wallet-account {
+  font-size: 12px;  color: #666;
+  /* max-width: 100px;  overflow: hidden; */
+  /* text-overflow: ellipsis;   */
+  white-space: nowrap;
+}
+/* تنسيقات الحالة */.status {
+  padding: 5px 10px;  border-radius: 4px;
+  font-size: 14px;  text-transform: capitalize;
+  display: inline-block;}
+.status.pending {
+  background-color: rgba(255, 193, 7, 0.2);  color: #ff9800;
+}
+.status.approved {  background-color: rgba(33, 150, 243, 0.2);
+  color: #2196f3;}
+.status.processing {
+  background-color: rgba(156, 39, 176, 0.2);  color: #9c27b0;
+}
+.status.completed {  background-color: rgba(76, 175, 80, 0.2);
+  color: #4caf50;}
+.status.rejected {
+  background-color: rgba(244, 67, 54, 0.2);  color: #f44336;
+}
+/* تنسيقات الإجراءات */.cashout-actions {
+  display: flex;  align-items: center;
+  gap: 10px;}
+.view-btn {
+  padding: 5px 10px;  background-color: #f0f0f0;
+  border-radius: 4px;  color: #555;
+  text-decoration: none;  font-size: 14px;
+  transition: background-color 0.2s;}
+.view-btn:hover {
+  background-color: #e0e0e0;}
+/* تنسيقات القائمة المنسدلة للحالات */
+.status-select-container {  min-width: 120px;
+}
+.status-select {  font-size: 14px !important;
+  border-radius: 4px !important;}
+.status-select.pending {
+  background-color: rgba(255, 193, 7, 0.1);  color: #ff9800;
+  border: 1px solid rgba(255, 193, 7, 0.3);}
+.status-select.approved {
+  background-color: rgba(33, 150, 243, 0.1);  color: #2196f3;
+  border: 1px solid rgba(33, 150, 243, 0.3);}
+.status-select.processing {
+  background-color: rgba(156, 39, 176, 0.1);  color: #9c27b0;
+  border: 1px solid rgba(156, 39, 176, 0.3);}
+.status-select.completed {
+  background-color: rgba(76, 175, 80, 0.1);  color: #4caf50;
+  border: 1px solid rgba(76, 175, 80, 0.3);}
+.status-select.rejected {
+  background-color: rgba(244, 67, 54, 0.1);  color: #f44336;
+  border: 1px solid rgba(244, 67, 54, 0.3);}
+/* تنسيقات الإشعارات */
+.custom-notification {  position: fixed;
+  bottom: 20px;  right: 20px;
+  padding: 10px 15px;  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);  z-index: 9999;
+  display: flex;  align-items: center;
+  justify-content: space-between;  width: auto;
+  min-width: 250px;  animation: slideUpAndFade 0.4s ease-out forwards;
+  font-weight: 500;  font-size: 14px;
+}
+@keyframes slideUpAndFade {  0% {
+    transform: translateY(20px);    opacity: 0;
+  }  100% {
+    transform: translateY(0);    opacity: 1;
+  }}
+.custom-notification.success {
+  background-color: #f0f9f0;  color: #1b5e20;
+  border: 1px solid rgba(46, 125, 50, 0.2);}
+.custom-notification.error {
+  background-color: #fef5f5;  color: #b71c1c;
+  border: 1px solid rgba(198, 40, 40, 0.2);}
+.custom-notification .notification-content {
+  display: flex;  align-items: center;
+  gap: 8px;}
+.custom-notification .notification-icon {
+  font-size: 16px;  display: flex;
+  align-items: center;  justify-content: center;
+}
+.custom-notification .notification-message {  font-size: 14px;
+}
+.custom-notification button {  background: none;
+  border: none;  font-size: 16px;
+  cursor: pointer;  color: inherit;
+  opacity: 0.7;  transition: opacity 0.2s;
+  display: flex;  align-items: center;
+  justify-content: center;  padding: 0;
+  margin-left: 8px;}
+.custom-notification button:hover {
+  opacity: 1;}
+/* تنسيقات الوضع الداكن */
+.dark .user-email {  color: #aaa;
+}
+.dark .wallet-account {  color: #aaa;
+}
+.dark .view-btn {  background-color: #444;
+  color: #ddd;}
+.dark .view-btn:hover {
+  background-color: #555;}
+.dark .custom-notification.success {
+  background-color: rgba(27, 94, 32, 0.15);  color: #81c784;
+  border: 1px solid rgba(76, 175, 80, 0.3);}
+.dark .custom-notification.error {
+  background-color: rgba(183, 28, 28, 0.15);  color: #e57373;
+  border: 1px solid rgba(244, 67, 54, 0.3);}
+/* تنسيقات التحميل */
+.loading {  display: flex;
+  justify-content: center;  align-items: center;
+  height: 300px;  font-size: 18px;
+  color: #666;}
+.dark .loading {
+  color: #aaa;}
+/* تنسيقات DataGrid */
+.MuiDataGrid-root {  border: none !important;
+  background-color: white;}
+.dark .MuiDataGrid-root {
+  background-color: #222;  color: #ddd;
+}
+.MuiDataGrid-columnHeaders {  background-color: #f5f5f5;
+  border-bottom: 1px solid #e0e0e0 !important;}
+.dark .MuiDataGrid-columnHeaders {
+  background-color: #333;  border-bottom: 1px solid #444 !important;
+}
+.MuiDataGrid-cell {  border-bottom: 1px solid #f0f0f0 !important;
+}
+.dark .MuiDataGrid-cell {  border-bottom: 1px solid #333 !important;
+}
+.MuiTablePagination-root {  color: #333;
+}
+.dark .MuiTablePagination-root {  color: #ddd;
+}
+.MuiDataGrid-row:hover {  background-color: rgba(0, 0, 0, 0.04) !important;
+}
+.dark .MuiDataGrid-row:hover {
+  background-color: rgba(255, 255, 255, 0.04) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

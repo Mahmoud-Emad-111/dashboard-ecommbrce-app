@@ -1,0 +1,260 @@
+/* تنسيقات الرأس */
+.conversions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+.conversions-title {
+  color: #333;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.dark .conversions-title {
+  color: #ddd;
+}
+
+.conversions-stats {
+  display: flex;
+  gap: 20px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.dark .stat-item {
+  background-color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.stat-icon {
+  font-size: 20px;
+  color: #2196f3;
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-value {
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+}
+
+.dark .stat-value {
+  color: #fff;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #666;
+}
+
+.dark .stat-label {
+  color: #aaa;
+}
+
+/* تنسيقات خلية المستخدم */
+.user-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-avatar {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: 500;
+  font-size: 14px;
+  color: inherit;
+}
+
+.user-email {
+  font-size: 12px;
+  color: #666;
+}
+
+.dark .user-email {
+  color: #aaa;
+}
+
+.user-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* تنسيقات خلية العرض */
+.offer-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+.offer-name {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.offer-id {
+  font-size: 12px;
+  color: #666;
+  white-space: nowrap;
+  overflow-x: auto;
+  max-width: 180px;
+  display: block;
+  scrollbar-width: thin;
+  scrollbar-color: #ddd #f5f5f5;
+}
+
+.offer-id::-webkit-scrollbar {
+  height: 4px;
+}
+
+.offer-id::-webkit-scrollbar-track {
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.offer-id::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+  border-radius: 4px;
+}
+
+.dark .offer-id {
+  color: #aaa;
+  scrollbar-color: #555 #333;
+}
+
+.dark .offer-id::-webkit-scrollbar-track {
+  background: #333;
+}
+
+.dark .offer-id::-webkit-scrollbar-thumb {
+  background-color: #555;
+}
+
+/* تنسيقات المبلغ والعائد */
+.amount, .payout {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.payout {
+  color: #4caf50;
+}
+
+.dark .payout {
+  color: #81c784;
+}
+
+/* تنسيقات الإجراءات */
+.conversion-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.view-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  color: #555;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.view-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.dark .view-btn {
+  background-color: #444;
+  color: #ddd;
+}
+
+.dark .view-btn:hover {
+  background-color: #555;
+}
+
+/* تنسيقات التحميل */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  font-size: 18px;
+  color: #666;
+}
+
+.dark .loading {
+  color: #aaa;
+}
+
+/* تنسيقات DataGrid */
+.MuiDataGrid-root {
+  border: none !important;
+  background-color: white;
+}
+
+.dark .MuiDataGrid-root {
+  background-color: #222;
+  color: #ddd;
+}
+
+.MuiDataGrid-columnHeaders {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #e0e0e0 !important;
+}
+
+.dark .MuiDataGrid-columnHeaders {
+  background-color: #333;
+  border-bottom: 1px solid #444 !important;
+}
+
+.MuiDataGrid-cell {
+  border-bottom: 1px solid #f0f0f0 !important;
+}
+
+.dark .MuiDataGrid-cell {
+  border-bottom: 1px solid #333 !important;
+}
+
+.MuiTablePagination-root {
+  color: #333;
+}
+
+.dark .MuiTablePagination-root {
+  color: #ddd;
+}
+
+.MuiDataGrid-row:hover {
+  background-color: rgba(0, 0, 0, 0.04) !important;
+}
+
+.dark .MuiDataGrid-row:hover {
+  background-color: rgba(255, 255, 255, 0.04) !important;
+}

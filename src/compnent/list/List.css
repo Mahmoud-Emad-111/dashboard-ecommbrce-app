@@ -22,19 +22,62 @@
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
 }
-.list_main .Approved{
+.list_main .active{
         color: rgb(12, 132, 12);
         background-color: rgba(0, 128, 0, 0.151);
 }
-.list_main .Pending
+.list_main .suspended
 {
     color: goldenrod;
     background-color:rgba(189, 189, 3, 0.103);
 }
+.list_main .banned
+{
+    color: rgb(218, 38, 32);
+    background-color:rgba(189, 56, 3, 0.103);
+}
+
 /* //////////////////////////////////////// */
                 /* DARK_MOOD */
 /* ///////////////////////////////////////// */
 .dark td, .dark th{
     background-color: #111;
     color: #7f7f7f;
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.dark .loading {
+    color: #bbb;
+}
+
+.view-all-link {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.view-all-link a {
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.view-all-link a:hover {
+    background-color: rgba(25, 118, 210, 0.1);
+}
+
+.dark .view-all-link a {
+    color: #90caf9;
+}
+
+.dark .view-all-link a:hover {
+    background-color: rgba(144, 202, 249, 0.1);
 }

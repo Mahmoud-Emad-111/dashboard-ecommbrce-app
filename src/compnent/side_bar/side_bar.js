@@ -7,7 +7,7 @@ import {FaUser,FaAddressCard,FaRegHandPaper} from "react-icons/fa";
 import {BsShop} from "react-icons/bs";
 import {ImTruck} from "react-icons/im";
 import {CgArrowsVAlt} from "react-icons/cg";
-import {IoNotifications} from "react-icons/io5";
+import {IoCashOutline, IoNotifications} from "react-icons/io5";
 import {BsFillCloudArrowUpFill,BsGear} from "react-icons/bs";
 import {FiLogOut} from "react-icons/fi";
 
@@ -35,12 +35,12 @@ const Side_bar=(props)=>{
                         <span><Link to="/user">user</Link></span>
                     </li>
                     <li>
-                        <BsShop/>
-                        <span><Link to="/product">product</Link></span>
+                        <IoCashOutline/>
+                        <span><Link to="/Cashout">Cashout</Link></span>
                     </li>
                     <li>
-                        <FaAddressCard/>
-                        <span><Link to="/order">order</Link></span>
+                        <BsShop/>
+                        <span><Link to="/Conversions">Conversions</Link></span>
                     </li>
                     <li>
                         <ImTruck/>
